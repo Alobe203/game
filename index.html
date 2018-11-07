@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<title>GAME</title>
+</head>
+<body>
+	<div id="game_start">
+		<p>Выберите ваш класс:</p>
+		<div class="class_choose">
+			<label id='warrior_label'><input type="radio" id='warrior' name='class' onclick='warriorGameplay()'><p>Воин</p></label>
+			<p class='warrior_desc'>Воин имеет способность атаковать и блокировать атаки противника</p>
+			<label id='mage_label'><input type="radio" id='mage' name='class' onclick='mageGameplay()'><p>Маг</p></label>
+			<p class="mage_desc">Маг имеет способность атаковать и частично восстонавливать себе здоровье</p>
+		</div>
+	</div>
+	<div id="gameplay">
+		<p id="lvl"></p>
+		<p id="exp"></p>
+		<div class="startingBattle">
+			<button id='startFight'>Вступить в бой с мобом</button>
+		</div>
+		<div id="fightWindow">
+			<div class="visible_skins">
+				<div class="player">
+					<div id="player_stats">
+					</div>
+				</div>
+				<div class="mob">
+					<p>картиночки пока нет, тк не могу найти годных под разрешение</p>
+					<div id="mob_stats">
+
+					</div>
+				</div>
+			</div>
+			<p id='whoAttack'></p>
+			<div id="cd_abilities"></div>
+			<div class="abilities">
+				<div class="ability1 ability"><p>1</p></div>
+				<div class="ability2 ability"><p>2</p></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src='assets/js/script.js'></script>
+</body>
+</html>

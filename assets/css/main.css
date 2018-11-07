@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.class_choose label{
+	display: flex;
+	font-size: 20px;
+}
+
+.class_choose input {
+	position: relative;
+	top: 5px;
+}
+
+#warrior_label p {
+	color: #A62020;
+}
+
+#mage_label p {
+	color: #0DA3FF;
+}
+
+.warrior_desc{
+	display: inline-block;
+	border: 1px solid grey;
+	background: #DEDEDF;
+	display: none;
+}
+
+.mage_desc {
+	display: inline-block;
+	border: 1px solid grey;
+	background: #DEDEDF;
+	display: none;
+}
+
+#gameplay {
+	display: none;
+}
+
+#fightWindow {
+	display: none;
+}
+
+#startFight {
+	width: 250px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.startingBattle {
+	text-align: center;
+}
+
+.abilities {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	width: 200px;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.ability {
+	border: 2px solid red;
+	width: 100px;
+	height: 100px;
+}
+
+.abilities p {
+	font-size: 16;
+	position: relative;
+	left: 3px;
+}
+
+.visible_skins {
+	display: grid;
+	grid-template-columns: 400px 400px;
+	margin: 20px auto;
+	border: 3px solid red;
+	width: 800px;
+	height: 500px;
+}
+
+.player {
+	border: 1px solid #433E42;
+}
+
+.mob {
+	border: 1px solid #433E42;
+}
+
+#cd_abilities {
+	z-index: 1;
+	width: 100%;
+	height: 300px;
+	position: fixed;
+	bottom: 0;
+	opacity: 1;
+	display: none;
+}
